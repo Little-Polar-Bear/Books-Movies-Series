@@ -47,10 +47,6 @@ public class InternalAppStorage {
         // write updated list to the file,
         // callback to notify calling class if write was successful or not.
         callbacks.itemAddedToFile(writeObjectsToFile(itemList, binaryFile));
-        int i = 9;
-        if(6 == i){
-            Log.e(TAG, "This is a sample to push to github");
-        }
     }
 
     /*Remove a object from file*/
