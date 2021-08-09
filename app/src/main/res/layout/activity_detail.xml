@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.DetailActivity"
+    android:background="@color/dark_or_light">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/detail_action_button"
+                style="@style/materialDesignButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#ff4444"
+                android:drawableLeft="@drawable/ic_baseline_shopping_cart_24"
+                android:drawableTint="@color/white"
+                android:fontFamily="@font/convergence"
+                android:gravity="center|center_vertical"
+                android:padding="16dp"
+                android:text="@string/buy"
+                android:textColor="@color/white"
+                android:tint="@android:color/white"
+                app:layout_constraintBottom_toTopOf="@id/detail_description_header_view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/vertical_guideline"
+                app:layout_constraintTop_toBottomOf="@id/detail_weeks_in_list_view"
+                tools:ignore="RtlHardcoded" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/detail_weeks_in_list_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/convergence"
+                android:textAlignment="center"
+                android:textColor="@color/reverse_dark_or_light"
+                app:layout_constraintEnd_toStartOf="@id/vertical_guideline"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/detail_image_view"
+                tools:text="New This Week!" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/detail_rank_view"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/convergence"
+                android:textAlignment="textStart"
+                android:textColor="@color/reverse_dark_or_light"
+                app:layout_constraintBottom_toTopOf="@id/detail_action_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/vertical_guideline"
+                app:layout_constraintTop_toBottomOf="@id/detail_publisher_view"
+                tools:text="Rank: 3rd" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/detail_description_header_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/convergence"
+                android:text="@string/description"
+                android:textAlignment="textStart"
+                android:textColor="@color/reverse_dark_or_light"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/detail_action_button" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/detail_description_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:paddingBottom="16dp"
+                android:fontFamily="@font/convergence"
+                android:justificationMode="inter_word"
+                android:textAlignment="viewStart"
+                android:textColor="@color/reverse_dark_or_light"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/detail_description_header_view"
+                tools:text="Description of a book, movie or series! This will tell the user a little bit more about what they are going to purchases or watch. As you can see it needs to be quite long to fill up the space. I am worried that i need something else to fill the space the description will leave empty." />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/detail_author_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/convergence"
+                android:textAlignment="textStart"
+                android:textColor="@color/reverse_dark_or_light"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/vertical_guideline"
+                app:layout_constraintTop_toBottomOf="@id/detail_title_view"
+                tools:text="By Bill Clinton" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/detail_publisher_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/convergence"
+                android:textAlignment="textStart"
+                android:textColor="@color/reverse_dark_or_light"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/vertical_guideline"
+                app:layout_constraintTop_toBottomOf="@id/detail_author_view"
+                tools:text="Published by Brown Chicken" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/detail_title_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/convergence"
+                android:textAlignment="textStart"
+                android:textColor="@color/reverse_dark_or_light"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/vertical_guideline"
+                app:layout_constraintTop_toTopOf="@id/detail_image_view"
+                tools:text="The President's Daughters" />
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/detail_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                android:padding="16dp"/>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/vertical_guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/detail_image_view"
+                android:layout_width="0dp"
+                android:layout_height="185dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:elevation="2dp"
+                android:scaleType="fitXY"
+                app:elevation="2dp"
+                app:layout_constraintEnd_toStartOf="@id/vertical_guideline"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/detail_toolbar"
+                app:shapeAppearance="@style/DetailBook.ShapeableImageView"
+                tools:src="@mipmap/ic_launcher" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

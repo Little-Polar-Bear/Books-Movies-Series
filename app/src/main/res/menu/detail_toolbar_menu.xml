@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?><!--Menu layout that allows a user to add an item and show tick when added, if tick clicked
+item is removed and the add sign is shown again-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/add_menu_btn"
+        android:icon="@drawable/ic_baseline_add_24"
+        android:title="@string/add"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/check_menu_btn"
+        android:icon="@drawable/ic_baseline_check_24"
+        android:title="@string/added_to_list"
+        android:visible="false"
+        app:showAsAction="ifRoom" />
+
+</menu>

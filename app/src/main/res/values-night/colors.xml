@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--App specific colours for assets-->
+    <color name="dark_or_light">#FF000000</color>
+    <color name="reverse_dark_or_light">#FFFFFFFF</color>
+</resources>

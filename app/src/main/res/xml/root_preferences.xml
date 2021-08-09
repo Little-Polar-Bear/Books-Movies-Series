@@ -1,0 +1,68 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="Help">
+
+        <Preference
+            app:key="send_feedback"
+            app:summary="Report technical issues or suggest new features"
+            app:title="Send Feedback" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="My List">
+
+        <Preference
+            app:icon="@drawable/ic_baseline_delete_24"
+            app:key="clear_list"
+            app:summary="Clear all saved content from your list"
+            app:title="Clear" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Sync">
+
+        <SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:summary="Let us save titles to 'My List' based off of your preferences"
+            app:defaultValue="false"
+            app:key="sync"
+            app:title="Smart Sync" />
+
+        <SwitchPreferenceCompat
+            android:summaryOff="Manually save book titles"
+            android:summaryOn="Automatically saving book titles"
+            app:defaultValue="true"
+            app:dependency="sync"
+            app:key="book_sync"
+            app:title="Books" />
+
+        <SwitchPreferenceCompat
+            android:summaryOff="Manually save movie titles"
+            android:summaryOn="Automatically saving movie titles"
+            app:defaultValue="true"
+            app:dependency="sync"
+            app:key="movie_sync"
+            app:title="Movies" />
+
+        <SwitchPreferenceCompat
+            android:summaryOff="Manually save series titles"
+            android:summaryOn="Automatically saving series titles"
+            app:defaultValue="true"
+            app:dependency="sync"
+            app:key="series_sync"
+            app:title="Series" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Information">
+
+        <Preference
+            app:key="version_code"
+            app:selectable="false"
+            app:summary="1.0.2"
+            app:title="Version" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

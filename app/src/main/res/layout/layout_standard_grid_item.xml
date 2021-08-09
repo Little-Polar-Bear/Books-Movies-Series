@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--A layout file to be used as a browsing item on the left within a grid list UI-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/convergence"
+        android:justificationMode="inter_word"
+        android:paddingTop="8dp"
+        android:textAlignment="viewStart"
+        android:textColor="@color/reverse_dark_or_light"
+        app:layout_constraintEnd_toEndOf="@id/image_view"
+        app:layout_constraintStart_toStartOf="@id/image_view"
+        app:layout_constraintTop_toBottomOf="@id/image_view"
+        tools:text="This is where the title will go. If it is two big it will wrap around and go to the next line while maintaining justification text alignment." />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/image_view"
+        android:layout_width="110dp"
+        android:layout_height="125dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/lolli_wrapper_bkg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearance="@style/ShapeableImageViewGrid_LEFT"/>
+
+    <!--Debug purpose-->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/list_rank_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/convergence"
+        android:textColor="@color/red_hulu"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="1"
+        android:visibility="gone"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/subtitle_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/convergence"
+        android:textColor="@color/item_subTitle"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@id/image_view"
+        tools:text="sub-title"
+        android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

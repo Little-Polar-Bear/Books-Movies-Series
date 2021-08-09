@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+    This layout file is used by the AlertDialog when displaying a list of items.
+    This layout file is inflated and used as the TextView to display individual
+    items. Must only contain a TextView with id @android:id/text1
+-->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@android:id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ellipsize="marquee"
+    android:fontFamily="@font/convergence"
+    android:gravity="center_vertical"
+    android:padding="16dp"
+    android:textColor="?android:attr/textColorAlertDialogListItem"
+    tools:text="Judge Judy Season 4" />

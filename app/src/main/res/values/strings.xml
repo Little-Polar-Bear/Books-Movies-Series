@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Books, Movies, Series</string>
+    <string name="search">Search</string>
+    <string name="movies">Movies</string>
+    <string name="books">Books</string>
+    <string name="series">Series</string>
+    <string name="favorites">Favorites</string>
+    <string name="buy">Buy</string>
+    <string name="description">Description:</string>
+    <string name="book_rank">Rank: %1$s</string>
+    <string name="publisher">Publisher: %1$s</string>
+    <string name="weeks_on_list">%1$d weeks on the <b>New York Best Sellers</b> list</string>
+    <string name="reviews">Review:</string>
+    <string name="preview">Preview Book</string>
+    <string name="review_temp_text">Description of a book, movie or series! This will tell the user a little bit more about what they are going to purchases or watch. As you can see it needs to be quite long to fill up the space. I am worried that i need something else to fill the space the description will leave empty.</string>
+    <string name="review_n_a">Review n/a</string>
+    <string name="more_from_author">More From Author</string>
+    <string name="image_to_indicate_top_ranking_spot">Image to indicate top ranking spot</string>
+    <string name="open_link_in_a_new_view">Open link in a new view</string>
+    <string name="add">Add to list</string>
+    <string name="added_to_list">Saved to list</string>
+
+    <!--testing string array list-->
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="messages_header">Messages</string>
+
+    <!-- Preference Titles -->
+    <string name="sync_header">Sync</string>
+    <string name="signature_title">Your signature</string>
+
+    <!-- Messages Preferences -->
+    <string name="reply_title">Default reply action</string>
+    <string name="sync_title">Sync email periodically</string>
+
+    <!-- Sync Preferences -->
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string-array name="spinner_list">
+        <item>New York Best Sellers</item>
+        <item>All Time Great Thrillers</item>
+        <item>All Time Great Dramas</item>
+        <item>All Time Great Comedies</item>
+    </string-array>
+</resources>
