@@ -1,4 +1,4 @@
-package com.littlepolarbear.tvmoviereviews.activities
+package com.littlepolarbear.tvmoviereviews.activities;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
