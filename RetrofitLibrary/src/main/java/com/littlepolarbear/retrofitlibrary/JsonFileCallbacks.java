@@ -1,4 +1,4 @@
-package com.littlepolarbear.retrofitlibrary;
+package com.littlepolarbear.retrofitlibrary
 
 import retrofit2.Call;
 import retrofit2.http.GET;
