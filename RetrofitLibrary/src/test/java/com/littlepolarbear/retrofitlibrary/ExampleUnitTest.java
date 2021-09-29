@@ -1,4 +1,4 @@
-package com.littlepolarbear.retrofitlibrary
+package com.littlepolarbear.retrofitlibrary;
 
 import org.junit.Test;
 
