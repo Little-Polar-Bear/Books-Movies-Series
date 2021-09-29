@@ -1,4 +1,4 @@
-package com.littlepolarbear.tvmoviereviews.activities
+package com.littlepolarbear.tvmoviereviews.activities;
 
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
