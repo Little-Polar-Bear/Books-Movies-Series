@@ -36,7 +36,7 @@ public class UIHelper {
     }
 
     /*Style the material shape drawable
-     * common through out this app to give this design functionality to our material shape drawables*/
+     * common through out this app to give this design functionality to our material shape drawables */
     public void doMaterialShapeDesignTop(MaterialShapeDrawable shapeDrawable, float radius) {
         if (shapeDrawable != null) {
             shapeDrawable.setShapeAppearanceModel(shapeDrawable.getShapeAppearanceModel()
