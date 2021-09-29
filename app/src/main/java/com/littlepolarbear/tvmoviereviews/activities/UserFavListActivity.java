@@ -23,7 +23,7 @@ public class UserFavListActivity extends AppCompatActivity implements
         StandardRecyclerAdapter.StandardRecyclerAdapterCallbacks<JsonPOJO.Item>,
         InternalAppStorage.InternalStorageCallbacks {
 
-    // debug tag
+    // debug tag 
     private static final String TAG = "USER_FAV_LIST_ACTIVITY";
     private StandardRecyclerAdapter<JsonPOJO.Item> recyclerAdapter;
     private ActivityExtensionViewModel viewModel;
