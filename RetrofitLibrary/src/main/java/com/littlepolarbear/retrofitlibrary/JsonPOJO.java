@@ -1,4 +1,4 @@
-package com.littlepolarbear.retrofitlibrary;
+package com.littlepolarbear.retrofitlibrary
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
