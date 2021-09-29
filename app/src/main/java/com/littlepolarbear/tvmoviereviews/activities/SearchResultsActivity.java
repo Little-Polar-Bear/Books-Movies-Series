@@ -16,7 +16,7 @@ import androidx.appcompat.widget.SearchView;
 import com.littlepolarbear.tvmoviereviews.R;
 import com.littlepolarbear.tvmoviereviews.utils.UIHelper;
 
-/*A search results activity that complies with the android framework practices.
+/*A search results activity  that complies with the android framework practices.
  * Although search function is not set up as of yet.
  * Need to decide how the search will be executed and what data to use.
  * There is no master database set up to be able to search, just individual JSon files.
