@@ -47,7 +47,7 @@ public class MasterFragmentViewModel extends ViewModel {
                 }
                 Log.v("DEBUG_TAG", "returning the keyList with a size of: " + keyList.size() + " on " +
                         Thread.currentThread());
-                // post the value as we are on a background thread.
+                // post the value as we are on a background thread. 
                 genreCategories.postValue(keyList);
             } // catch the exceptions
             catch (MalformedURLException e) {
