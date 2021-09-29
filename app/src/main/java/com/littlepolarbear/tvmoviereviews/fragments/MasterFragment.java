@@ -151,7 +151,7 @@ public class MasterFragment extends Fragment implements
         requestData.getDataFromFile(fileName);
     }
 
-    /*Standard recycler click event callbacks
+    /*Standard recycler click event callbacks 
      * onclick callback*/
     @Override
     public void itemClick(int position, ShapeableImageView imageView) {
