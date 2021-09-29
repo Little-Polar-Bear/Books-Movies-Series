@@ -3,7 +3,7 @@ package com.littlepolarbear.tvmoviereviews.utils;
 /*A class designed to take parameters(input) and return a correctly formatted output*/
 public class FormatClass {
 
-    /*Method to take a number and return it as the string ordinal value.
+    /*Method to take a number and return it as the string ordinal value. 
      * Eg: convert 1 to "1st"*/
     public static String numberFormatOrdinal(int value) {
         // 0 -9 correct suffixes in string array
