@@ -36,7 +36,7 @@ public class InternalAppStorage {
         this.callbacks = callbacks;
     }
 
-    /*Write a object to a file on a background thread*/
+    /*Write a object to a file on a background thread */
     private void saveObjectToFile(final Context context, final JsonPOJO.Item item) {
         // cache file to re-use
         File binaryFile = getBinaryFile(context);
