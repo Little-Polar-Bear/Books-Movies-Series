@@ -17,7 +17,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.littlepolarbear.tvmoviereviews.R;
 import com.littlepolarbear.tvmoviereviews.fragments.MasterFragment;
 
-/*Main activity inflates a layout to house the fragments.
+/*Main activity inflates a layout to house the  fragments.
  * Initiates and configures the 'Bottom Navigation' so user can move between the different fragments*/
 public class MainActivity extends AppCompatActivity {
 
