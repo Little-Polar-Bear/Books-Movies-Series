@@ -1,4 +1,4 @@
-package com.littlepolarbear.tvmoviereviews
+package com.littlepolarbear.tvmoviereviews;
 
 import android.view.LayoutInflater;
 import android.view.View;
