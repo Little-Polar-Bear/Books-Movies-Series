@@ -21,7 +21,7 @@ public class SettingsActivity extends AppCompatActivity {
 
     private static final String TAG = "SETTINGS_ACTIVITY";
 
-    // UI class that has convenience methods to help
+    // UI class that has  convenience methods to help
     // override some methods here if needed.
     private final UIHelper uiHelper = new UIHelper() {
         /*Return the id of the toolbar */
